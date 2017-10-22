@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,span,dl,dt,dd,img,table,thead,tfoot,tbody,th,td,pre,em,strong{
+	margin:0;
+	padding:0;
+	font-weight:400;
+	font-family:Microsoft Yahei,Arial,Tahoma,Verdana,sans-serif;
+	font-size:12px;
+	color:#333;
+	outline:0 none;
+}
+h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+	font-style:normal;
+	font-weight:400;
+	font-size:12px;
+	outline:0 none;
+}
+ul,li,ol{
+	list-style:none;
+}
+form,fieldset,input,textarea,select,option,label{
+	padding:0;
+	margin:0;
+	font-style:normal;
+	font-weight:400;
+	font-size:12px;
+	outline:0 none;
+}
+a,a:link,a:hover{
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+	outline:0 none;
+}
+span,img{
+	display:block;
+}
+img{
+	border:0 none;
+}
+table{
+	border-spacing:0;
+	border-collapse:collapse;
+}
+.fleft{
+	float:left;
+}
+.fright{
+	float:right;
+}
+.calendar{
+	width:428px;
+	margin:0 auto;
+}
+#date{
+	clear:both;
+}
+.calendar ul{
+	overflow:hidden;
+	border-right:1px solid #000;
+}
+#date ul{
+	border-bottom:1px solid #000;
+}
+#date li,#date li.odd,.calendar li{
+	float:left;
+	width:60px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	font-size:14px;
+	font-weight:700;
+	position:relative;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+}
+#date li.cur{
+	color:#FFF;
+	background-color:#369;	
+}
+#date li.weekend{
+	color:#F00;
+}
+#date li.old{
+	color:gray;
+}
+.calendar li span,.calendar li p{
+	display:block;
+	width:50px;
+	height:30px;
+	color:#000;
+}
+.calendar li span{
+	display:block;
+	position:absolute;
+	z-index:10;
+	display:none;
+}
+.calendar li p{
+	font-size:14px;
+	font-weight:700;
+	/*background-color:#f00;*/
+}
+/*.calendar li img{
+	background-color:#f00;
+}*/
+.dateTitle{
+	width:406px;
+	margin:0 auto;
+	padding:10px;
+	overflow:hidden;
+	border:1px solid #000;
+	border-bottom:0;
+	position:relative;
+}
+#dateDetail{
+	clear:both;
+	margin:0 auto;
+	width:200px;
+	/*height:30px;*/
+	text-align:center;
+	font-size:14px;
+	line-height:30px;
+	/*position:absolute;
+	top:12px;*/
+	border:1px solid #f00;
+}
+.dateBtn{
+	height:32px;
+}
+#dateControl{
+	clear:both;
+	/*margin:0 auto;
+	width:200px;*/
+	position:absolute;
+	top:10px;
+	width:99%;
+	left:1%;
+	z-index:100;
+}
+#dateControl dl{
+	width:108px;
+	float:left;
+}
+#dateControl dl.next{
+	width:108px;
+	float:right;
+}
+#dateControl dt,#dateControl dd{
+	width:50px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	text-align:center;
+	margin-right:2px;
+	border:1px solid #369;
+}
+#dateControl a{
+	display:block;
+	width:50px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+#dateControl a:hover{
+	color:orange;
+}
+#year,#month,#day,#week{
+	font-family:Microsoft Yahei;
+	font-size:14px;
+	display:inline;
+	/*float:left;*/
+	/*margin-right:1px;*/
+	line-height:30px;
+}
+#year,#day{
+	color:red;
+}
+#lunarYear{
+	width:150px;
+	height:30px;
+	background-color:#FFF;
+	border:1px solid #000;
+}
