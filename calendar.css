@@ -139,6 +139,7 @@ table{
 	width:99%;
 	left:1%;
 	z-index:100;
+	/*position:relative;*/
 }
 #dateControl dl{
 	width:108px;
@@ -163,11 +164,26 @@ table{
 	height:30px;
 	line-height:30px;
 	text-align:center;
+	border:1px solid #369;
+}
+#dateControl a:first-child,#dateControl a:nth-child(2){
+	float:left;
+	margin-right:2px;
+}
+#dateControl a:nth-child(3),#dateControl a:last-child{
+	position:absolute;
+	top:0;
+}
+#dateControl a:nth-child(3){
+	right:56px;
+}
+#dateControl a:last-child{
+	right:2px;
 }
 #dateControl a:hover{
 	color:orange;
 }
-#year,#month,#day,#week{
+#year,#month,#day,#week,.dateDetail p{
 	font-family:Microsoft Yahei;
 	font-size:14px;
 	display:inline;
@@ -175,7 +191,7 @@ table{
 	/*margin-right:1px;*/
 	line-height:30px;
 }
-#year,#day{
+#year,#day,.year,.day{
 	color:red;
 }
 #lunarYear{
